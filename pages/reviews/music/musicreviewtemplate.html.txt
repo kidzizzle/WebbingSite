@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--TITLE = "Title Here!!"-->
+<!--DESCRIPTION = "Description Here!!"-->
+<!--TAGS = "Tag here!!"-->
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TheWebberSite | Music Review Title Here!!</title>
+        <link href="../../../style.css?v=1" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <div class="bodywrapper" id="blogpost">
+            <div id="blogreturn">
+                <a href="../../../index.html"><p id="blogreturnhome">Return To<br>Home</p></a>
+                <a href="../musicreviewnav.html"><p id="blogreturnlist">Return To<br>Music Review List</p></a>
+            </div>
+            <h2 class="center centerText">Blog Title Here!!</h2>
+			<h3 class="center centerText">Artist Name here!!</h3>
+            <img class="albumCoverSmallScreen">
+            <br>
+            <p class="columnText">
+                <img class="albumCoverBigScreen">
+                First Paragraph Here!!!
+            </p>
+        </div>
+    </body>
+</html>

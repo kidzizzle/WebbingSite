@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 1000px) {
+    #mainbody {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navigationmenu {
+        display: none;
+    }
+
+    #homesmallnav {
+        display: flex;
+    }
+
+    .smallnav {
+        display: block;
+    }
+
+    .flex-child {
+        min-width: 100%;
+    }
+
+    .bodywrapper {
+        min-width: 100%;
+    }
+
+    .albumCoverSmallScreen {
+        display: flex;
+    }
+
+    .albumCoverBigScreen {
+        display: none;
+    }
+
+    .inblogimage {
+        max-width: 80%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    #homesmallnav {
+        display: none;
+    }
+
+    .smallnav {
+        display: none;
+    }
+
+    .albumCoverSmallScreen {
+        display: none;
+    }
+
+    .inblogimage {
+        max-width: 600px;
+    }
+}
+
+body {
+    color: whitesmoke;
+    /*background: url("images/ghost.gif") fixed, url("images/cbg.jpg") fixed;*/
+    background: url("images/cbg.jpg") fixed;
+    background-size: 10vh;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-left: 2%;
+    margin-right: 2%;
+    align-items: center;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+ul {
+    display: inline-block;
+    list-style-position: outside;
+    list-style: square;
+    text-align: left;
+}
+
+ul li {
+    padding: 3px 3px 3px 3px;
+}
+
+ul ul {
+    display: inline-block;
+    list-style-position: outside;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.inblogimage {
+	display: flex;
+	margin: auto;
+}
+
+.staple {
+	height: 75px;
+	width: 75px;
+	rotate: -20deg;
+	position: relative;
+	left: -30px;
+	top: -30px;
+}
+
+.bodywrapper {
+    border: 0.4em ridge lightgray;
+    background-image: url("images/bbg.jpg");
+    background-size: 10vh;
+    background-attachment: fixed;
+    background-color: #00128f;
+    color: whitesmoke;
+    margin: 0.5em;
+    margin-top: 0;
+    min-width: 300px;
+    padding: 1em 1em 1em 1em;
+    text-shadow: 3px 3px 1px black;
+    box-shadow: inset black 0px 0px 60px -20px, black 3px 3px 20px;
+}
+
+.navwrapper {
+    border: 0.4em ridge lightgray;
+    background-image: url("images/pbg.jpg");
+    background-size: 10vh;
+    background-attachment: fixed;
+    background-color: #00128f;
+    color: whitesmoke;
+    margin: 0.5em;
+    margin-top: 0;
+	margin-right: 0;
+    max-width: 350px;
+    min-width: 300px;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+    box-shadow: inset black 0px 0px 60px -20px, black 3px 3px 20px;
+    position: relative;
+}
+
+.navwrapper ul {
+    list-style-image: url("images/bullet.png");
+    border: 0.1em dotted white;
+    background-color: #640057;
+    box-shadow: black 3px 3px 1px;
+    padding-right: 0.5em;
+}
+
+.navwrapper ul ul {
+    border: none;
+    box-shadow: none;
+}
+
+.smallnav {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+#homesmallnav {
+	flex-direction: column;
+	justify: space-evenly;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+    background-image: url("images/pbg.jpg");
+    background-size: 10vh;
+    background-color: #640057;
+    border: 0.4em ridge lightgray;
+    box-shadow: inset black 0px 0px 60px -20px, black 3px 3px 20px;
+    margin: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	min-width: 300px;
+    text-shadow: 3px 3px 1px black;
+}
+
+#homesmallnav p {
+	max-width: fit-content;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	vertical-align: center;
+}
+
+#smallnavhomelist {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#titlewrapper {
+    margin-bottom: 0.5em;
+    max-width: 35em;
+}
+
+#blogpost {
+    margin: auto;
+    background-image: none;
+    background-color: whitesmoke;
+    color: black;
+    text-shadow: none;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+#blogpost a:link, #blogpost a:visited {
+    color: rgb(3, 0, 170);
+    text-decoration: none;
+}
+
+#blogpost a:hover, #blogpost a:active {
+    text-decoration: underline;
+}
+
+#blogreturn {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#blogreturnhome {
+    flex-basis: 50%;
+    margin-left: 0;
+    margin-right: 1em;
+    text-align: left;
+}
+
+#blogreturnlist {
+    flex-basis: 50%;
+    margin-right: 0;
+    margin-left: 1em;
+    text-align: right;
+}
+
+#bodytitle {
+    background-color: #0f1b72;
+    max-width: fit-content;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0.1em dotted white;
+}
+
+#featuredposts {
+    background-image: url("images/bgfp.jpg");
+    background-size: 10vh;
+    background-color: #0f1b72;
+}
+
+#postboard {
+    max-width: 98%;
+    column-gap: 1em;
+    row-gap: 1em;
+    justify-items: center;
+}
+
+#floatingbutton {
+    border: 0.1em dashed whitesmoke;
+    background: rgb(0, 0, 0);
+    padding: 1em 1em 1em 1em;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    filter: drop-shadow(15px 10px black);
+}
+
+#blognav {
+    background-image: url("images/blogbg.jpg");
+    background-size: 10vh;
+    background-color: #459b64;
+}
+
+#reviewnav {
+    background-image: url("images/reviewbg.jpg");
+    background-size: 10vh;
+    background-color: #530084;
+}
+
+#moviereviewnav {
+    background-image: url("images/moviereviewbg.jpg");
+    background-size: 10vh;
+    background-color: #530084;
+}
+
+#musicreviewnav {
+    background-image: url("images/musicreviewbg.jpg");
+    background-size: 10vh;
+    background-color: #530084;
+}
+
+#videogamereviewnav {
+    background-image: url("images/videogamereviewbg.jpg");
+    background-size: 10vh;
+    background-color: #530084;
+}
+
+#friendnav {
+    background-image: url("images/friendsbg.jpg");
+    background-size: 10vh;
+    background-color: #740000;
+}
+
+#socialsnav {
+    background-image: url("images/socialsbg.jpg");
+    background-size: 10vh;
+    background-color: black;
+}
+
+#blognavheader {
+    background-color: #1a5e32;
+}
+
+#reviewnavheader {
+    background-color: #39005b;
+}
+
+#featuredheader {
+    background-color: #7c5d35;
+}
+
+#friendnavheader {
+    background-color: #960000;
+}
+
+#socialsnavheader {
+    background-color: #2b2b2b;
+}
+
+.bodyheader {
+    background-color: #0f1b72;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0.1em dotted white;
+    box-shadow: black 3px 3px 1px;
+}
+
+.featuredpost {
+    flex: 1 0 40%;
+    background-image: url("images/fp.jpg");
+    background-size: 10vh;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding: 0.5em;
+    text-shadow: none;
+    box-shadow: black 0px 4px 10px;
+}
+
+.featuredpost a:link, .featuredpost a:visited {
+    color: rgb(255, 80, 80);
+    text-decoration: none;
+}
+
+.featuredpost a:hover, .featuredpost a:active {
+    text-decoration: underline;
+}
+
+.staple {
+	height: 75px;
+	width: 75px;
+	rotate: -20deg;
+	position: relative;
+	left: -30px;
+	top: -30px;
+}
+
+.navheader {
+    background-color: #640057;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0.1em dotted white;
+    box-shadow: black 3px 3px 1px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.flex-child {
+    flex-grow: 1;
+    flex: 1;
+}
+
+.columnText {
+    margin: auto;
+    text-align: justify;
+    max-width: 800px;
+}
+
+.center {
+    display: flex;
+    margin: auto;
+}
+
+.centerText {
+    justify-content: center;
+    text-align: center;
+}
+
+.albumCoverBigScreen {
+    float: left;
+    margin-right: 1em;
+    width: 200px;
+    height: 200px;
+}
+
+.albumCoverSmallScreen {
+    margin: auto;
+    margin-top: 1em;
+    width: 200px;
+    height: 200px;
+}
